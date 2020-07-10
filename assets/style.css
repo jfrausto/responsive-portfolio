@@ -1,0 +1,35 @@
+body {
+  background-color: lightblue;
+}
+
+.custom-header {
+  background-color: white;
+  /* margin-left: 10px;
+  margin-right: 10px; */
+}
+
+header .name {
+  /* margin-left: 10px; */
+  background-color: crimson;
+  font-family: Impact;
+  text-align: center;
+  font-size: 32px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* padding: 10px; */
+}
+
+.custom-nav {
+  text-align: right;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* padding-top: 18px; */
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media screen and (max-width: 576px) {
+  .custom-nav {
+    text-align: center;
+  }
+}

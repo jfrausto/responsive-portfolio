@@ -2,8 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- added shrink-to-fit=no -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- add a FAVICON -->
+    <!-- add a reset.css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <title>About Me</title>
   </head>
-  <body></body>
+
+  <body>
+    <!-- fluid header breaks/stacks below 768px -->
+    <header class="container-fluid custom-header">
+      <div class="row">
+        <!-- use my-auto to vertically center text -->
+        <section class="col-sm-3 my-auto name">
+          JESSE FRAUSTO
+        </section>
+        <nav class="col my-auto custom-nav">
+          <strong><em>About</em></strong>   |   Portfolio   |   Contact
+        </nav>
+        </section>
+      </div>
+    </header>
+
+    
+
+
+
+
+  </body>
 </html>
