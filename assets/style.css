@@ -1,35 +1,94 @@
 body {
-  background-color: lightblue;
+  background-color: skyblue;
+  margin: 10px;
 }
 
 .custom-header {
   background-color: white;
-  /* margin-left: 10px;
-  margin-right: 10px; */
+  /* margin;
+  margin-left: 10px; */
+  margin-right: 10px;
+  border: solid 10px crimson;
+}
+
+header h1 {
+  font-family: Impact;
+  color: white;
+  text-align: center;
+  /* font-size: 32px; */
+  padding: 0px;
+  margin: 0px;
 }
 
 header .name {
   /* margin-left: 10px; */
   background-color: crimson;
-  font-family: Impact;
-  text-align: center;
-  font-size: 32px;
+
   padding-top: 15px;
   padding-bottom: 15px;
   /* padding: 10px; */
 }
 
 .custom-nav {
+  /* border-width: 15px;
+  border-style: solid;
+  border-color: crimson; */
   text-align: right;
-  padding-top: 15px;
+  /* padding-top: 15px;
   padding-bottom: 15px;
   /* padding-top: 18px; */
-  font-size: 20px;
+  /* margin: 0px; */
+  font-size: 18px;
   font-family: "Courier New", Courier, monospace;
+}
+
+.custom-main {
+  /* width: 100%; */
+  border-width: 10px;
+  border-style: solid;
+  border-color: crimson;
+  background-color: white;
+  margin: 1rem;
+}
+
+/* remove margins from hr */
+hr {
+  margin: 0rem;
+}
+
+.img-fluid {
+  max-width: 40%;
+  margin: 10px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.about-me {
+  margin: 1rem;
+}
+
+.about-me p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+}
+
+.about-me h2 {
+  font-family: Impact;
 }
 
 @media screen and (max-width: 576px) {
   .custom-nav {
     text-align: center;
+    padding: 2rem;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .about-me p {
+    text-align: left;
+    padding: 1rem;
   }
 }
