@@ -89,6 +89,14 @@ form {
   font-size: 16px;
 }
 
+.card {
+  margin: 0.5rem;
+}
+
+.card h5 {
+  font-family: "Courier New";
+}
+
 /* footer start */
 
 .custom-footer {
@@ -101,6 +109,7 @@ form {
 
 .custom-footer h3 {
   font-family: Impact;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 576px) {
