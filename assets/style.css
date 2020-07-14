@@ -3,10 +3,10 @@ body {
   margin: 10px;
 }
 
+/* header style */
+
 .custom-header {
   background-color: white;
-  /* margin;
-  margin-left: 10px; */
   margin-right: 10px;
   border: solid 10px crimson;
 }
@@ -15,32 +15,18 @@ header h1 {
   font-family: Impact;
   color: white;
   text-align: center;
-  /* font-size: 32px; */
   padding: 0px;
   margin: 0px;
 }
 
 header .name {
-  /* margin-left: 10px; */
   background-color: crimson;
-
   padding-top: 15px;
   padding-bottom: 15px;
-  /* padding: 10px; */
 }
 
 .custom-nav {
-  /* border-width: 15px;
-  border-style: solid;
-  border-color: crimson; */
-
   text-align: right;
-  /* justify-content: right; */
-
-  /* padding-top: 15px;
-  padding-bottom: 15px;
-  /* padding-top: 18px; */
-  /* margin: 0px; */
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
 }
@@ -53,8 +39,8 @@ header .name {
   color: crimson;
 }
 
+/* main section style */
 .custom-main {
-  /* width: 100%; */
   border-width: 10px;
   border-style: solid;
   border-color: crimson;
@@ -122,6 +108,8 @@ form {
   font-family: Impact;
   font-size: 1rem;
 }
+
+/* media query for xs screens */
 
 @media screen and (max-width: 576px) {
   .custom-nav {

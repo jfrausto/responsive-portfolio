@@ -21,13 +21,17 @@
   </head>
 
   <body>
-    <!-- fluid header breaks/stacks below 768px -->
+    <!-- fluid to fill whole screen -->
+    <!-- mx-auto sets responsive margins to the left and right -->
     <header class="container-fluid mx-auto rounded custom-header">
       <div class="row">
-        <!-- use my-auto to vertically center text -->
+        <!-- use my-auto to responsively and vertically center text -->
+        <!-- col-sm-5 unstacks at sizes bigger than xs-->
         <section class="col-sm-5 my-auto name">
           <h1>Jesse Frausto</h1>
         </section>
+        <!-- col class auto fills the rest of the row -->
+        <!-- working links to each page -->
         <nav class="col my-auto custom-nav">
           <strong
             ><em><a href="./index.html">About</a></em></strong
@@ -38,6 +42,7 @@
       </div>
     </header>
 
+    <!-- begin main section -->
     <main class="container-fluid mx-auto rounded custom-main">
       <div class="row">
         <section class="col mx-auto about-me">
@@ -46,14 +51,17 @@
       </div>
 
       <hr />
-
+      <!-- responsive image, with .img-fluid, takes up whole screen on xs -->
+      <!-- text wraps around image responsively on bigger screens -->
       <div class="row">
         <section class="col mx-auto about-me">
-          <img
-            class="rounded float-left img-fluid"
-            src="./assets/images/jesse_shopped_cropped.jpg"
-            alt="It's me Jesse!"
-          />
+          <figure>
+            <img
+              class="rounded float-left img-fluid"
+              src="./assets/images/jesse_shopped_cropped.jpg"
+              alt="It's me Jesse!"
+            />
+          </figure>
           <p>
             Hello World! I am a para-educator working with Special Education and
             an aspiring web developer from East Los Angeles. My interests
@@ -62,13 +70,13 @@
             with Xanga blogs and MySpace pages. The responsiveness to seemingly
             endless build combinations enthralled my young mind. Now, I am on
             the road to becoming your favorite web developer. Here on my
-            website, you'll find examples and links to my projects. Plese take a
-            look and reach out to me using my Contact page!
+            website, you'll find examples and links to my projects. Please take
+            a look and reach out to me using my Contact page!
           </p>
         </section>
       </div>
     </main>
-
+    <!-- footer takes whole screen with .container-fluid sizing utility -->
     <footer class="container-fluid mx-auto rounded custom-footer">
       <h3><span>&#169;</span>Copyright</h3>
     </footer>
