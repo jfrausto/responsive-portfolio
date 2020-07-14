@@ -33,13 +33,24 @@ header .name {
   /* border-width: 15px;
   border-style: solid;
   border-color: crimson; */
+
   text-align: right;
+  /* justify-content: right; */
+
   /* padding-top: 15px;
   padding-bottom: 15px;
   /* padding-top: 18px; */
   /* margin: 0px; */
   font-size: 18px;
   font-family: "Courier New", Courier, monospace;
+}
+
+.custom-nav a {
+  color: black;
+}
+
+.custom-nav a:hover {
+  color: crimson;
 }
 
 .custom-main {
