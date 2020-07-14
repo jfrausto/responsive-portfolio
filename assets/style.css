@@ -53,6 +53,7 @@ hr {
   margin: 0rem;
 }
 
+/* make image in about-me take only 40% of the column */
 .img-fluid {
   max-width: 40%;
   margin: 10px;
@@ -116,7 +117,7 @@ form {
     text-align: center;
     padding: 2rem;
   }
-
+  /* make image 100% of width on xs devices */
   .img-fluid {
     max-width: 100%;
     margin-bottom: 10px;
