@@ -2,7 +2,7 @@
 
 _Jesse Frausto // July 14th, 2020_
 
-In this project, I create a mobile-first responsive portfolio using the Bootstrap 4 framework. I utilize bootstrap components and its utility classes to build a responsive layout that rearranges its parts, including images, according to screen size.
+In this project, I create a mobile-first responsive portfolio using the Bootstrap 4 framework. I utilize bootstrap components and its utility classes to build a responsive layout that rearranges its parts, including images, according to screen size...
 
 Throughout the source code, you can find instances of Bootstrap's grid system in which I utilize containers, rows, and columns. For example, in my custom Navbar found in each `html` page:
 
