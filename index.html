@@ -31,12 +31,12 @@
   <body>
     <!-- fluid to fill whole screen -->
     <!-- mx-auto sets responsive margins to the left and right -->
-    <header class="container mx-auto rounded custom-header">
+    <header class="container mx-auto rounded custom-header my-5">
       <div class="row">
         <!-- use my-auto to responsively and vertically center text -->
         <!-- col-sm-5 unstacks at sizes bigger than xs-->
         <section class="col-sm-5 my-auto name">
-          <h1 class="filter-shadow">Jesse Frausto</h1>
+          <h1 class="filter-shadow-name">Jesse Frausto</h1>
         </section>
         <!-- col class auto fills the rest of the row -->
         <!-- working links to each page -->
@@ -47,18 +47,20 @@
           | <a href="./portfolio.html">Portfolio</a> |
           <a href="./contact.html">Contact</a> -->
           <div class="row py-2">
-            <div class="col-4 text-center">
-              <strong
-                ><em
-                  ><a href="./index.html" class="filter-shadow">About</a></em
-                ></strong
+            <div class="col-4 text-center my-auto">
+              <a href="./index.html" class="filter-shadow this-page notOpaque"
+                >About</a
               >
             </div>
-            <div class="col-4 text-center">
-              <a href="./portfolio.html" class="filter-shadow">Portfolio</a>
+            <div class="col-4 text-center my-auto">
+              <a href="./portfolio.html" class="filter-shadow notOpaque"
+                >Portfolio</a
+              >
             </div>
-            <div class="col-4 text-center">
-              <a href="./contact.html" class="filter-shadow">Contact</a>
+            <div class="col-4 text-center my-auto">
+              <a href="./contact.html" class="filter-shadow notOpaque"
+                >Contact</a
+              >
             </div>
           </div>
         </nav>

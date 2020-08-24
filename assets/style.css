@@ -1,6 +1,6 @@
 body {
   /* position: absolute; */
-  background: linear-gradient(60deg, white 20%, skyblue);
+  background: linear-gradient(45deg, white 33%, skyblue);
   /* margin-: 0px; */
   height: 100vh;
   /* overflow-y: hidden; */
@@ -8,12 +8,12 @@ body {
 
 /* header style */
 
-.custom-header {
-  background-color: seashell;
-  margin-right: 10px;
-  border: solid 10px crimson;
-  /* filter: drop-shadow(2em 2em 3px); */
-}
+/* .custom-header {
+  /* background-color: seashell; */
+/* margin-right: 10px; */
+/* border: solid 2px crimson; */
+/* filter: drop-shadow(2em 2em 3px); */
+/* } */
 
 header h1 {
   font-family: Impact;
@@ -24,11 +24,15 @@ header h1 {
 }
 
 .filter-shadow {
-  filter: drop-shadow(5px 5px 2px skyblue);
+  filter: drop-shadow(5px 5px 2px crimson);
+}
+
+.filter-shadow-name {
+  filter: drop-shadow(5px 5px 3px skyblue);
 }
 
 header .name {
-  background-color: crimson;
+  background: transparent;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -36,25 +40,35 @@ header .name {
 /* header {
   box-shadow: crimson;
 } */
-
+/* .notOpaque {
+  opacity: ;
+} */
 .custom-nav {
   text-align: right;
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
+  background: transparent;
+  /* color: white; */
 }
 
 .custom-nav a {
-  color: black;
+  color: white;
   /* text-decoration-style: double; */
 }
 
 .custom-nav a:hover {
-  color: crimson;
+  color: red;
+}
+
+.this-page {
+  font-size: 20px;
+  font-weight: 900;
+  filter: drop-shadow(5px 5px 5px crimson);
 }
 
 /* main section style */
 .custom-main {
-  border-width: 10px;
+  border-width: 2px;
   border-style: solid;
   border-color: crimson;
   background-color: seashell;
@@ -115,7 +129,7 @@ form {
 .custom-footer {
   background-color: seashell;
   text-align: center;
-  border-width: 10px;
+  border-width: 2px;
   border-style: solid;
   border-color: crimson;
 }
