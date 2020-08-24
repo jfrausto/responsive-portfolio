@@ -1,6 +1,6 @@
 body {
   /* position: absolute; */
-  background: linear-gradient(45deg, white 20%, skyblue);
+  background: linear-gradient(60deg, white 20%, skyblue);
   /* margin-: 0px; */
   height: 100vh;
   /* overflow-y: hidden; */
@@ -71,7 +71,7 @@ hr {
   max-width: 40%;
   margin: 10px;
   margin-bottom: 0px;
-  margin-left: 0px;
+  margin-right: 1rem;
 }
 
 .about-me {
@@ -81,6 +81,8 @@ hr {
 .about-me p {
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
+  margin-left: 2rem;
+  margin-right: 1.5rem;
 }
 
 .about-me h2 {
@@ -125,19 +127,24 @@ form {
 
 /* media query for xs screens */
 
-/* @media screen and (max-width: 576px) {
-  .custom-nav {
+@media screen and (max-width: 576px) {
+  /* .custom-nav {
     text-align: center;
     padding: 2rem;
   } */
-/* make image 100% of width on xs devices */
-/* .img-fluid {
+  /* make image 100% of width on xs devices */
+  .img-fluid {
     max-width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    padding-right: 1rem;
+    /* margin-left: auto;
+    margin */
   }
 
   .about-me p {
     text-align: left;
-    padding: 1rem;
+    margin-top: 1rem;
+    /* margin-left: 0rem;
+    margin-right: 0rem; */
   }
-} */
+}
