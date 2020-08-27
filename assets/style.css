@@ -68,10 +68,11 @@ header .name {
 
 /* main section style */
 .custom-main {
-  border-width: 2px;
-  border-style: solid;
+  border-top-width: 2px;
+  border-top-style: solid;
   border-color: crimson;
-  background-color: seashell;
+  border-top-color: crimson;
+  background: transparent;
   margin: 1rem;
 }
 
@@ -86,6 +87,7 @@ hr {
   margin: 10px;
   margin-bottom: 0px;
   margin-right: 1rem;
+  border-radius: 50%;
 }
 
 .about-me {
@@ -127,11 +129,11 @@ form {
 /* footer start */
 
 .custom-footer {
-  background-color: seashell;
+  background: transparent;
   text-align: center;
-  border-width: 2px;
+  /* border-width: 2px;
   border-style: solid;
-  border-color: crimson;
+  border-color: crimson; */
 }
 
 .custom-footer h3 {
