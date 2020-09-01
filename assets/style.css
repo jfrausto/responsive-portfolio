@@ -4,6 +4,7 @@ body {
   /* margin-: 0px; */
   height: 100vh;
   /* overflow-y: hidden; */
+  background-attachment: fixed;
 }
 
 /* header style */
