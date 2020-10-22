@@ -24,6 +24,7 @@
     />
     <!-- link to custom CSS -->
     <link rel="stylesheet" href="./assets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;680&family=Roboto+Mono&display=swap" rel="stylesheet">
 
     <title>About Me</title>
   </head>
@@ -31,7 +32,7 @@
   <body>
     <!-- fluid to fill whole screen -->
     <!-- mx-auto sets responsive margins to the left and right -->
-    <header class="container mx-auto rounded custom-header mt-3 mb-1">
+    <header class="container mx-auto rounded custom-header pt-4 mb-1">
       <div class="row">
         <!-- use my-auto to responsively and vertically center text -->
         <!-- col-sm-5 unstacks at sizes bigger than xs-->
@@ -48,13 +49,13 @@
           <a href="./contact.html">Contact</a> -->
           <div class="row py-1">
             <div class="col-4 col-md-5 text-center mx-auto">
-              <a href="./index.html" class="filter-shadow this-page">About</a>
+              <p id="about" class="filter-shadow this-page">About</p>
             </div>
             <div class="col-4 col-md-5 mb-3 text-center mx-auto">
-              <a href="./portfolio.html" class="filter-shadow">Portfolio</a>
+              <p id="portfolio" class="filter-shadow">Portfolio</p>
             </div>
             <div class="col-4 col-md-5 mb-3 text-center mx-auto">
-              <a href="./contact.html" class="filter-shadow">Contact</a>
+              <p id="contact" class="filter-shadow">Contact</p>
             </div>
           </div>
         </nav>
@@ -95,5 +96,6 @@
     <footer class="container mx-auto rounded custom-footer">
       <h3><span>&#169;</span>Copyright</h3>
     </footer>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

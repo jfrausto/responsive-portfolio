@@ -1,10 +1,15 @@
 body {
   /* position: absolute; */
-  background: linear-gradient(45deg, white 44%, skyblue);
+  background: linear-gradient(30deg, rgb(35, 51, 71) 4%, rgb(49, 50, 75));
   /* margin-: 0px; */
   height: 100vh;
   /* overflow-y: hidden; */
   background-attachment: fixed;
+  color: rgb(255, 235, 235);
+
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.35rem;
+  /* color: white; */
 }
 
 /* header style */
@@ -17,8 +22,8 @@ body {
 /* } */
 
 header h1 {
-  font-family: Impact;
-  color: white;
+  font-family: "Commissioner", sans-serif;
+  color: rgb(255, 235, 235);
   text-align: center;
   padding: 0px;
   margin: 0px;
@@ -29,7 +34,7 @@ header h1 {
 }
 
 .filter-shadow-name {
-  filter: drop-shadow(5px 5px 3px skyblue);
+  filter: drop-shadow(5px 5px 3px rgb(11, 108, 146));
 }
 
 header .name {
@@ -47,18 +52,21 @@ header .name {
 .custom-nav {
   text-align: right;
   font-size: 16px;
-  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Courier New", Courier, monospace; */
   background: transparent;
   /* color: white; */
 }
 
 .custom-nav a {
   color: white;
+  transition: all ease 0.4s;
   /* text-decoration-style: double; */
 }
 
 .custom-nav a:hover {
   color: red;
+  transform-box: border-box;
+  transform: scale(1.25);
 }
 
 .this-page {
@@ -75,7 +83,7 @@ header .name {
   border-top-color: crimson;
   background: transparent;
   /* margin: 1rem; */
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 /* remove margins from hr */
@@ -94,17 +102,18 @@ hr {
 
 .about-me {
   margin: 1rem;
+  /* margin-top: 2rem; */
 }
 
 .about-me {
-  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Courier New", Courier, monospace; */
   font-size: 16px;
   /* margin-left: 2rem;
   margin-right: 1.5rem; */
 }
 
 .about-me h2 {
-  font-family: Impact;
+  /* font-family: Impact; */
 }
 
 .custom-contact {
@@ -112,11 +121,11 @@ hr {
 }
 
 .custom-contact h2 {
-  font-family: Impact;
+  /* font-family: Impact; */
 }
 
 form {
-  font-family: "Courier New";
+  /* font-family: "Courier New"; */
   font-size: 16px;
 }
 
@@ -125,7 +134,7 @@ form {
 }
 
 .card h5 {
-  font-family: "Courier New";
+  /* font-family: "Courier New"; */
 }
 
 /* footer start */
@@ -139,7 +148,7 @@ form {
 }
 
 .custom-footer h3 {
-  font-family: Impact;
+  /* font-family: Impact; */
   font-size: 1rem;
 }
 
