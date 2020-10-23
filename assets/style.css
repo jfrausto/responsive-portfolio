@@ -57,16 +57,27 @@ header .name {
   /* color: white; */
 }
 
-.custom-nav a {
+#about,
+#portfolio,
+#contact {
   color: white;
   transition: all ease 0.4s;
   /* text-decoration-style: double; */
 }
 
-.custom-nav a:hover {
+#about:hover,
+#portfolio:hover,
+#contact:hover {
   color: red;
   transform-box: border-box;
   transform: scale(1.25);
+  cursor: pointer;
+}
+#about:active,
+#portfolio:active,
+#contact:active {
+  transform: translateY(3px);
+  filter: drop-shadow(2px 2px 2px crimson);
 }
 
 .this-page {
