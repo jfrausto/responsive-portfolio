@@ -14,13 +14,6 @@ body {
 
 /* header style */
 
-/* .custom-header {
-  /* background-color: seashell; */
-/* margin-right: 10px; */
-/* border: solid 2px crimson; */
-/* filter: drop-shadow(2em 2em 3px); */
-/* } */
-
 header h1 {
   font-family: "Commissioner", sans-serif;
   color: rgb(255, 235, 235);
@@ -69,9 +62,10 @@ header .name {
 #portfolio:hover,
 #contact:hover {
   color: red;
-  transform-box: border-box;
+  /* transform-box: border-box; */
   transform: scale(1.25);
   cursor: pointer;
+  /* border-bottom: solid 2px crimson; */
 }
 #about:active,
 #portfolio:active,
