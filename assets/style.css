@@ -74,6 +74,22 @@ header .name {
   filter: drop-shadow(2px 2px 2px crimson);
 }
 
+.color-back {
+  background-color: crimson;
+  border: solid 2px black;
+  border-radius: 10%;
+  transition: all ease 0.4s;
+}
+.color-back:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px crimson);
+}
+
+.color-back:active {
+  transform: scale(1.1);
+  transform: translateY(3px);
+}
 .this-page {
   font-size: 20px;
   font-weight: 900;
@@ -145,8 +161,9 @@ form {
 /* footer start */
 
 .custom-footer {
-  background: transparent;
   text-align: center;
+  font-size: 16px;
+  background: linear-gradient(30deg, rgb(35, 51, 71) 4%, rgb(49, 50, 75));
   /* border-width: 2px;
   border-style: solid;
   border-color: crimson; */
@@ -154,6 +171,8 @@ form {
 
 .custom-footer h3 {
   /* font-family: Impact; */
+  /* position: fixed; */
+
   font-size: 1rem;
 }
 
