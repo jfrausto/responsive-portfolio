@@ -1,51 +1,110 @@
 body {
-  background-color: skyblue;
-  margin: 10px;
+  /* position: absolute; */
+  background: linear-gradient(30deg, rgb(35, 51, 71) 4%, rgb(49, 50, 75));
+  /* margin-: 0px; */
+  height: 100vh;
+  /* overflow-y: hidden; */
+  background-attachment: fixed;
+  color: rgb(255, 235, 235);
+
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.35rem;
+  /* color: white; */
 }
 
 /* header style */
 
-.custom-header {
-  background-color: white;
-  margin-right: 10px;
-  border: solid 10px crimson;
-}
-
 header h1 {
-  font-family: Impact;
-  color: white;
+  font-family: "Commissioner", sans-serif;
+  color: rgb(255, 235, 235);
   text-align: center;
   padding: 0px;
   margin: 0px;
 }
 
+.filter-shadow {
+  filter: drop-shadow(5px 5px 2px crimson);
+}
+
+.filter-shadow-name {
+  filter: drop-shadow(5px 5px 3px rgb(11, 108, 146));
+}
+
 header .name {
-  background-color: crimson;
+  background: transparent;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
+/* header {
+  box-shadow: crimson;
+} */
+/* .notOpaque {
+  opacity: ;
+} */
 .custom-nav {
   text-align: right;
-  font-size: 18px;
-  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  /* font-family: "Courier New", Courier, monospace; */
+  background: transparent;
+  /* color: white; */
 }
 
-.custom-nav a {
-  color: black;
+#about,
+#portfolio,
+#contact {
+  color: white;
+  transition: all ease 0.4s;
+  /* text-decoration-style: double; */
 }
 
-.custom-nav a:hover {
-  color: crimson;
+#about:hover,
+#portfolio:hover,
+#contact:hover {
+  color: red;
+  /* transform-box: border-box; */
+  transform: scale(1.25);
+  cursor: pointer;
+  /* border-bottom: solid 2px crimson; */
+}
+#about:active,
+#portfolio:active,
+#contact:active {
+  transform: translateY(3px);
+  filter: drop-shadow(2px 2px 2px crimson);
+}
+
+.color-back {
+  background-color: crimson;
+  border: solid 2px black;
+  border-radius: 10%;
+  transition: all ease 0.4s;
+}
+.color-back:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px crimson);
+}
+
+.color-back:active {
+  transform: scale(1.1);
+  transform: translateY(3px);
+}
+.this-page {
+  font-size: 20px;
+  font-weight: 900;
+  filter: drop-shadow(5px 5px 5px crimson);
 }
 
 /* main section style */
 .custom-main {
-  border-width: 10px;
-  border-style: solid;
+  border-top-width: 2px;
+  border-top-style: solid;
   border-color: crimson;
-  background-color: white;
-  margin: 1rem;
+  border-top-color: crimson;
+  background: transparent;
+  /* margin: 1rem; */
+  padding-top: 40px;
 }
 
 /* remove margins from hr */
@@ -55,23 +114,27 @@ hr {
 
 /* make image in about-me take only 40% of the column */
 .img-fluid {
-  max-width: 40%;
-  margin: 10px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  display: block;
+  max-width: 75%;
+  /* margin: 5px; */
+  border-radius: 50%;
+  /* margin-top: 24px; */
 }
 
 .about-me {
   margin: 1rem;
+  /* margin-top: 2rem; */
 }
 
-.about-me p {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 18px;
+.about-me {
+  /* font-family: "Courier New", Courier, monospace; */
+  font-size: 16px;
+  /* margin-left: 2rem;
+  margin-right: 1.5rem; */
 }
 
 .about-me h2 {
-  font-family: Impact;
+  /* font-family: Impact; */
 }
 
 .custom-contact {
@@ -79,11 +142,11 @@ hr {
 }
 
 .custom-contact h2 {
-  font-family: Impact;
+  /* font-family: Impact; */
 }
 
 form {
-  font-family: "Courier New";
+  /* font-family: "Courier New"; */
   font-size: 16px;
 }
 
@@ -92,39 +155,46 @@ form {
 }
 
 .card h5 {
-  font-family: "Courier New";
+  /* font-family: "Courier New"; */
 }
 
 /* footer start */
 
 .custom-footer {
-  background-color: white;
   text-align: center;
-  border-width: 10px;
+  font-size: 16px;
+  background: linear-gradient(30deg, rgb(35, 51, 71) 4%, rgb(49, 50, 75));
+  /* border-width: 2px;
   border-style: solid;
-  border-color: crimson;
+  border-color: crimson; */
 }
 
 .custom-footer h3 {
-  font-family: Impact;
+  /* font-family: Impact; */
+  /* position: fixed; */
+
   font-size: 1rem;
 }
 
 /* media query for xs screens */
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .custom-nav {
     text-align: center;
     padding: 2rem;
-  }
-  /* make image 100% of width on xs devices */
-  .img-fluid {
-    max-width: 100%;
-    margin-bottom: 10px;
+  } */
+/* make image 100% of width on xs devices */
+/* .img-fluid {
+    max-width: 85%;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .about-me p {
     text-align: left;
-    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
-}
+} */

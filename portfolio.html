@@ -22,42 +22,50 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/style.css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;680&family=Roboto+Mono&display=swap" rel="stylesheet">
     <title>Portfolio</title>
   </head>
   <body>
     <!-- fluid to fill whole screen -->
     <!-- mx-auto sets responsive margins to the left and right -->
-    <header class="container-fluid mx-auto rounded custom-header">
+    <header class="container mx-auto rounded custom-header pt-2 mb-1">
       <div class="row">
         <!-- use my-auto to responsively and vertically center text -->
-        <!-- col-sm-5 breaks at sizes bigger than xs-->
-        <section class="col-sm-5 my-auto name">
-          <h1>Jesse Frausto</h1>
+        <!-- col-sm-5 unstacks at sizes bigger than xs-->
+        <section class="col-12 col-md-5 my-auto name">
+          <h1 class="filter-shadow-name pb-2">Jesse Frausto</h1>
         </section>
         <!-- col class auto fills the rest of the row -->
         <!-- working links to each page -->
-        <nav class="col my-auto custom-nav">
-          <a href="./index.html">About</a>
-          |
-          <strong
-            ><em><a href="./portfolio.html">Portfolio</a></em></strong
+        <nav class="col-12 col-md-7 pt-3 my-auto custom-nav">
+          <!-- <strong
+            ><em><a href="./index.html">About</a></em></strong
           >
-          |
-          <a href="./contact.html">Contact</a>
+          | <a href="./portfolio.html">Portfolio</a> |
+          <a href="./contact.html">Contact</a> -->
+          <div class="row py-1">
+            <div class="col-4 col-md-5 text-center mx-auto">
+              <p id="about" class="filter-shadow">About</p>
+            </div>
+            <div class="col-4 col-md-5 mb-3 text-center mx-auto">
+              <p id="contact" class="filter-shadow">Contact</p>
+            </div>
+            <div class="col-4 col-md-5 mb-3 text-center mx-auto">
+              <p id="portfolio" class="filter-shadow this-page"
+                >Portfolio</p>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
 
     <!-- begin main section -->
-    <main class="container-fluid mx-auto rounded custom-main">
+    <main class="container mx-auto rounded custom-main">
       <div class="row">
         <section class="col mx-auto about-me">
-          <h2 class="my-auto">Portfolio</h2>
+          <h2 class="my-auto text-center">My Work</h2>
         </section>
       </div>
-
-      <hr />
       <!-- 1st row; rows collapse/stack on xs screens-->
       <!-- Card components -->
       <div class="row">
@@ -65,20 +73,20 @@
           <div class="card">
             <figure>
               <a
-                href="https://jfrausto.github.io/password-generator/"
+                href="https://gentle-oasis-33918.herokuapp.com/"
                 target="_blank"
                 ><img
                   class="card-img-top"
-                  src="./assets/images/password_gen.PNG"
-                  alt="password generator layout"
+                  src="./assets/images/burger-app-full.PNG"
+                  alt="burger database"
                 />
               </a>
             </figure>
             <div class="card-body">
               <a
-                href="https://jfrausto.github.io/password-generator/"
+                href="https://gentle-oasis-33918.herokuapp.com/"
                 target="_blank"
-                ><h5 class="card-title text-center">Password Generator</h5></a
+                ><h5 class="card-title text-center">Out-n-In Burger</h5></a
               >
             </div>
           </div>
@@ -87,27 +95,27 @@
           <div class="card">
             <figure>
               <a
-                href="https://jfrausto.github.io/javascript-pop-quiz/"
+                href="https://blooming-everglades-09738.herokuapp.com"
                 target="_blank"
                 ><img
                   class="card-img-top"
-                  src="./assets/images/javacript_popQ.PNG"
-                  alt="pop quiz layout"
+                  src="./assets/images/learning-squads-full.PNG"
+                  alt="pick your trial and squad view"
                 />
               </a>
             </figure>
             <div class="card-body">
               <a
-                href="https://jfrausto.github.io/javascript-pop-quiz/"
+                href="https://blooming-everglades-09738.herokuapp.com"
                 target="_blank"
-                ><h5 class="card-title text-center">Javascript Pop Quiz</h5></a
+                ><h5 class="card-title text-center">Learning Squads</h5></a
               >
             </div>
           </div>
         </section>
       </div>
       <!-- 2nd row -->
-      <div class="row">
+      <div class="row mb-5">
         <section class="col-sm-6">
           <div class="card">
             <figure>
@@ -134,7 +142,7 @@
                 target="_blank"
                 ><img
                   class="card-img-top"
-                  src="./assets/images/pub_crawl_gen.PNG"
+                  src="./assets/images/pub-crawl-generator-full.PNG"
                   alt="pub crawl generator layout"
                 />
               </a>
@@ -149,27 +157,13 @@
           </div>
         </section>
       </div>
-      <!-- 3rd row -->
-      <!-- <div class="row">
-        <section class="col-sm-6">
-          <div class="card">
-            <figure>
-              <img
-                class="card-img-top"
-                src="./assets/images/unsplash-5-aurora.jpg"
-                alt="aurora borealis"
-              />
-            </figure>
-            <div class="card-body">
-              <h5 class="card-title text-center">Web Design</h5>
-            </div>
-          </div>
-        </section>
-      </div> -->
     </main>
     <!-- footer takes whole screen with .container-fluid sizing utility -->
-    <footer class="container-fluid mx-auto rounded custom-footer">
-      <h3><span>&#169;</span>Copyright</h3>
+    <footer class="mx-auto fixed-bottom custom-footer">
+      <div class="container my-2">
+        <h3><span>&#169;</span>Copyright</h3>
+      </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
